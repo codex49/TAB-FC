@@ -58,7 +58,7 @@ const CreditCardForm = (): ReactElement => {
                 onChange={handleChange}
                 onFocus={handleFocus}
               />
-              <Alert show={errors.cname || false} variant="danger">
+              <Alert show={!!errors.cname || false} variant="danger">
                 {errors.cname}
               </Alert>
             </Form.Group>
@@ -71,7 +71,7 @@ const CreditCardForm = (): ReactElement => {
                 onChange={handleChange}
                 onFocus={handleFocus}
               />
-              <Alert show={errors.cnumber || false} variant="danger">
+              <Alert show={!!errors.cnumber || false} variant="danger">
                 {errors.cnumber}
               </Alert>
             </Form.Group>
@@ -86,7 +86,7 @@ const CreditCardForm = (): ReactElement => {
                     onChange={handleChange}
                     onFocus={handleFocus}
                   />
-                  <Alert show={errors.cexp || false} variant="danger">
+                  <Alert show={!!errors.cexp || false} variant="danger">
                     {errors.cexp}
                   </Alert>
                 </Form.Group>
@@ -101,7 +101,7 @@ const CreditCardForm = (): ReactElement => {
                     onChange={handleChange}
                     onFocus={handleFocus}
                   />
-                  <Alert show={errors.ccvv || false} variant="danger">
+                  <Alert show={!!errors.ccvv || false} variant="danger">
                     {errors.ccvv}
                   </Alert>
                 </Form.Group>
