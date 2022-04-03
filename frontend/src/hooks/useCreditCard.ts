@@ -41,7 +41,6 @@ const useCreditCard = () => {
       })
       .catch((error) => {
         setTransactionState(2);
-        console.log(error);
       });
 
     //Empty credit carrd form after the transaction

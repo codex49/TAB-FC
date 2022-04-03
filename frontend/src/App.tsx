@@ -8,11 +8,10 @@ function App() {
   const { isCreditCardFormVisible } = useSelector(
     (state: State) => state.creditCard
   );
-  console.log("isCreditCardFormVisible", isCreditCardFormVisible);
   return (
     <>
       <UserBalance />
-      {<CreditCardForm /> && isCreditCardFormVisible}
+      {isCreditCardFormVisible && <CreditCardForm />}
     </>
   );
 }
