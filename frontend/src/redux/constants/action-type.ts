@@ -1,0 +1,4 @@
+export const ActionType = {
+  SET_BALANCE: "SET_BALANCE",
+  CREDIT_CARD_FORM_STATE: "CREDIT_CARD_FORM_STATE",
+};

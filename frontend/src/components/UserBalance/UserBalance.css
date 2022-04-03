@@ -1,0 +1,10 @@
+.user-balance {
+    text-align: center;
+    margin: 60px auto 0;
+    width: 460px;
+    padding: 40px;
+    border-radius: 10px;
+    -webkit-box-shadow: -1px 1px 6px 0px rgb(0 0 0 / 20%);
+    -moz-box-shadow: -1px 1px 6px 0px rgb(0 0 0 / 20%);
+    box-shadow: -1px 1px 6px 0px rgb(0 0 0 / 20%);
+}

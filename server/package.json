@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "SSample server to server the frontend challenge",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon --watch index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "connect-livereload": "^0.6.1",
+    "cors": "^2.8.5",
+    "livereload": "^0.9.3",
+    "nodemon": "^2.0.15"
+  }
+}

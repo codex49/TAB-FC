@@ -1,0 +1,23 @@
+.modal-backdrop {
+    background-color: #fff;
+}
+
+.modal-content {
+    box-shadow: -1px 8px 15px 0px rgb(0 0 0 / 44%);
+}
+
+.alert-danger {
+    margin-top: 4px;
+    padding: 4px 8px;
+}
+
+.creditCard {
+    margin-bottom: 30px;
+}
+
+.btn-success {
+    padding: 12px 10px;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+}
