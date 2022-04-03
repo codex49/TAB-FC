@@ -1,8 +1,8 @@
 import React, { ReactElement } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import Cards from "react-credit-cards";
 import { Button, Modal, Spinner, Form, Alert, Row, Col } from "react-bootstrap";
-import useCreditCardForm from "../../hooks/useCreditCardForm";
+import useCreditCard from "../../hooks/useCreditCard";
 import { toggleCreditCardForm } from "../../redux/actions/creditCardAction";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-credit-cards/es/styles-compiled.css";
@@ -17,10 +17,7 @@ const CreditCardForm = (): ReactElement => {
     errors,
     setErrors,
     transactionState,
-  } = useCreditCardForm();
-  const { isCreditCardFormVisible } = useSelector(
-    (state: any) => state.creditCard
-  );
+  } = useCreditCard();
   const dispatch = useDispatch();
 
   const hideCreditCardForm = () => {
@@ -29,7 +26,7 @@ const CreditCardForm = (): ReactElement => {
   };
 
   return (
-    <Modal show={isCreditCardFormVisible} onHide={hideCreditCardForm}>
+    <Modal show={true} onHide={hideCreditCardForm}>
       <Modal.Header closeButton></Modal.Header>
       <Alert
         show={(errors.isFormSucceed && transactionState === 1) || false}

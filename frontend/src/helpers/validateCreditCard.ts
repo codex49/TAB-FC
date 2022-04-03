@@ -1,7 +1,7 @@
 import valid from "card-validator";
 import { creditCardInputs, creditCardError } from "../types/creditCard.type";
 
-export default function validateInfo(values: creditCardInputs) {
+export default function validateCreditCard(values: creditCardInputs) {
   let errors: creditCardError = {
     cname: "",
     cnumber: "",

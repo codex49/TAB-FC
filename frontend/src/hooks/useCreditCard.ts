@@ -9,9 +9,9 @@ import { setBalance } from "../redux/actions/userAction";
 import { toggleCreditCardForm } from "../redux/actions/creditCardAction";
 import { useDispatch } from "react-redux";
 import axios from "axios";
-import validateInfo from "../helpers/validateInfo";
+import validateCreditCard from "../helpers/validateCreditCard";
 
-const useCreditCardForm = () => {
+const useCreditCard = () => {
   const dispatch = useDispatch();
   const [errors, setErrors] = useState<any>({});
   const [values, setValues] = useState({
@@ -74,7 +74,7 @@ const useCreditCardForm = () => {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    setErrors(() => validateInfo(values));
+    setErrors(() => validateCreditCard(values));
   };
 
   const handleFocus = (e: any) =>
@@ -94,4 +94,4 @@ const useCreditCardForm = () => {
   };
 };
 
-export default useCreditCardForm;
+export default useCreditCard;

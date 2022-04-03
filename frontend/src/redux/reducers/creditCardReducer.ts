@@ -1,8 +1,5 @@
+import { CreditCard } from "../../types/creditCard.type";
 import { ActionType } from "../constants/action-type";
-
-interface CreditCard {
-  isCreditCardFormVisible: boolean;
-}
 
 export const creditCardReducer = (
   state: CreditCard = { isCreditCardFormVisible: false },

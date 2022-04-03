@@ -1,5 +1,8 @@
 import { Focused } from "react-credit-cards";
 
+export interface CreditCard {
+  isCreditCardFormVisible: boolean;
+}
 export interface creditCardInputs {
   cardName: string;
   cardNumber: string;
