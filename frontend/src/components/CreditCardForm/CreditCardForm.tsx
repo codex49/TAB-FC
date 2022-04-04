@@ -107,7 +107,11 @@ const CreditCardForm = (): ReactElement => {
                 </Form.Group>
               </Col>
             </Row>
-            <Button type="submit" variant="success" disabled={errors.success}>
+            <Button
+              type="submit"
+              variant="success"
+              disabled={errors.isFormSucceed}
+            >
               {errors.isFormSucceed ? (
                 <Spinner animation="border" />
               ) : (
