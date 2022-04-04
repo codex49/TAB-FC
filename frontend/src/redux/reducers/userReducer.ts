@@ -7,6 +7,8 @@ export const userReducer = (
   { type, payload }: Action
 ) => {
   switch (type) {
+    case ActionType.FETCH_BALANCE:
+      return { ...state, balance: payload };
     case ActionType.SET_BALANCE:
       return { ...state, balance: payload };
     default:
