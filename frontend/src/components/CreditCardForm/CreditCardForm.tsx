@@ -27,7 +27,7 @@ const CreditCardForm = (): ReactElement => {
 
   return (
     <Modal show={true} onHide={hideCreditCardForm}>
-      <Modal.Header closeButton></Modal.Header>
+      <Modal.Header closeButton>Recharge your balance</Modal.Header>
       <Alert
         show={(errors.isFormSucceed && transactionState === 1) || false}
         variant="success"
